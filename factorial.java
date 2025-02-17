@@ -9,6 +9,11 @@ int fac = 1;
 for(int i=n;i>=1;i--){
 fac = fac*i ;
 }
+if(n<0){
+System.out.print("invalid input");
+}
+else{
 System.out.print("factorial of the numberis = "+fac);
+}
 }
 }
