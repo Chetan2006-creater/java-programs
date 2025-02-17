@@ -1,12 +1,17 @@
 import java.util.Scanner;
-class area{
-public static void main(String[] args){
-System.out.println("Enter the length of the area :");
+public class area {
+public static void main(String[] args) {
 Scanner read = new Scanner(System.in);
-int l = read.nextInt();
-System.out.println("Enter the width of the area :");
-int b = read.nextInt();
-int area = l*b;
-System.out.println("Area of the rectangle is "+area);
+System.out.print("Enter the length of the rectangle: ");
+int length = read.nextInt();
+System.out.print("Enter the width of the rectangle: ");
+int width = read.nextInt();
+int area = length * width;
+if(area>0){
+System.out.println("The area of the rectangle is: " + area);
+}
+else{
+System.out.println("Measurements should be negative . Invalid Input");
+}
 }
 }
