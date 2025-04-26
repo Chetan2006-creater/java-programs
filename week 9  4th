@@ -1,0 +1,31 @@
+// week-9 question number 4
+class university{
+	String universityName = "Amrita Vishwa vidyapeetham";
+	university(){
+		System.out.println("University name is "+ universityName);
+	}
+	class Department{
+		String deptName = "Computer Science and Engineering";
+		double deptCode = 124569;
+		void display(){
+		System.out.println("Department name is "+deptName+". Department code "+deptCode);
+		}
+	}
+	class Student{
+		String studentName = "Chetan Siva Pavan Kumar Daggubati";
+		int rollNumber = 24040;
+		void display(){
+		System.out.println("Student name is "+studentName+". Student Roll Number "+ rollNumber);
+		}
+
+	}
+}
+class main{
+	public static void main(String[] args){
+		university i1 = new university();
+		university.Department in1 = i1.new Department();
+		in1.display();
+		university.Student in2 = i1.new Student();
+		in2.display();
+	}
+}
